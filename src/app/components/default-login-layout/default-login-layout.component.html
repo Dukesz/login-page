@@ -1,15 +1,20 @@
 <main>
-    <section>
+    <section class="formulario-section">
         <img src="/assets/svg/logo.svg">
-        <h2></h2>
-        <button></button>
-        <button></button>
-        <div>
-            <span>or</span>
+        <h2> {{ title }}</h2> <!-- Valor do h2 é a variavel title, em que adicionamos um inputo em default-login-layout.components.tx -->
+        <div class="espaco-btn">
+            <button class="primary-btn">{{ primaryBtnText }}</button>
+            <div class="divisor">
+                <div></div>
+                <span>or</span>
+                <div></div>
+            </div>
+            <button class="secondary-btn">{{ secondaryBtnText }}</button>
         </div>
+
     </section>
-    <section>
-        <h1>You Should, MoveIt</h1>
+    <section class="main-section">
+        <h1>Let It Rip</h1>
         <img src="/assets/svg/main-illustration.svg">
     </section>
 </main>
