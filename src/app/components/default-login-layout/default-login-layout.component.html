@@ -2,6 +2,9 @@
     <section class="formulario-section">
         <img src="/assets/svg/logo.svg">
         <h2> {{ title }}</h2> <!-- Valor do h2 é a variavel title, em que adicionamos um inputo em default-login-layout.components.tx -->
+        <ng-content>    
+            <!--Itens inseridos no login.component.html-->
+        </ng-content>
         <div class="espaco-btn">
             <button class="primary-btn">{{ primaryBtnText }}</button>
             <div class="divisor">
