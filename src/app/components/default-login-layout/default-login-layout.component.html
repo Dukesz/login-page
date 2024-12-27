@@ -6,13 +6,16 @@
             <!--Itens inseridos no login.component.html-->
         </ng-content>
         <div class="espaco-btn">
-            <button class="primary-btn">{{ primaryBtnText }}</button>
+            <button class="primary-btn"
+            (click)="submit()"
+            [disabled]="disablePrimaryBtn"
+            >{{ primaryBtnText }}</button>
             <div class="divisor">
                 <div></div>
                 <span>or</span>
                 <div></div>
             </div>
-            <button class="secondary-btn">{{ secondaryBtnText }}</button>
+            <button class="secondary-btn" (click)="navigate()">{{ secondaryBtnText }}</button>
         </div>
 
     </section>

@@ -2,6 +2,9 @@
     title="Entrar em sua conta" 
     primaryBtnText="Fazer Login"
     secondaryBtnText="Criar Conta"
+    (submit)="submit()"
+    (navigate)="navigate()"
+    [disablePrimaryBtn]="!loginForm.valid"
 >
     <form [formGroup]="loginForm">
         <app-primary-input
